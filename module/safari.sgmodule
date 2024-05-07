@@ -1,6 +1,6 @@
 #!name=Safari全能搜索
 #!desc=Safari全能搜索(DuckDuckGo)
-#!system=macos
+#!system=mac
 
 [URL Rewrite]
 
