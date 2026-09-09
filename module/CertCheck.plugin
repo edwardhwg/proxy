@@ -1,0 +1,20 @@
+[Rule]
+# 始终拦截
+DOMAIN,ocsp.apple.com,REJECT
+DOMAIN,ocsp2.apple.com,REJECT
+DOMAIN,ocsp3.apple.com,REJECT
+DOMAIN,ocsp4.apple.com,REJECT
+DOMAIN,crl.apple.com,REJECT
+DOMAIN,valid.apple.com,REJECT
+DOMAIN,certs.apple.com,REJECT
+DOMAIN,appattest.apple.com,REJECT
+DOMAIN,vpp.itunes.apple.com,REJECT
+
+# 装包放行 / 日常拦截 → CertCheck
+DOMAIN-SUFFIX,ppq.apple.com,PROXY
+DOMAIN,ppq-ext.apple.com,PROXY
+DOMAIN,use1-ppq-ext-prod.apple.com,PROXY
+DOMAIN,usw2-ppq-ext-prod.apple.com,PROXY
+DOMAIN,ppq-ext.v.aaplimg.com,PROXY
+DOMAIN,ppq-st-ext.itunes.apple.com,PROXY
+IP-CIDR,17.173.66.213/32,PROXY,no-resolve
